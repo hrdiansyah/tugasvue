@@ -23,10 +23,10 @@
       v-model="leftDrawerOpen"
       show-if-above
       bordered
-      content-class="bg-grey-2"
+      content-class="bg-blue-6 text-white"
     >
       <q-list>
-        <q-item-label header>Essential Links</q-item-label>
+        <q-item-label header></q-item-label>
         <q-item clickable tag="a" target="_blank" href="/#/login">
           <q-item-section avatar>
             <q-icon name="school" />
@@ -38,7 +38,7 @@
         </q-item>
         <q-item clickable tag="a" target="_blank" href="/#/register">
           <q-item-section avatar>
-            <q-icon name="code" />
+            <q-icon name="star" />
           </q-item-section>
           <q-item-section>
             <q-item-label>Register</q-item-label>
