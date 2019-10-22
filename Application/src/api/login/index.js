@@ -10,7 +10,7 @@ export default {
       .then(function (response) {
         console.log(response)
         return response.data
-      }).catch(function (err) {
+      }).catch(function  (err) {
         console.log(err)
       })
   }

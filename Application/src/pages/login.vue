@@ -34,9 +34,15 @@
           label="REGISTER" 
           type="submit" 
           color="warning"/>
+        <q-btn 
+          label="SHOW" 
+          type="submit" 
+          color="warning"
+          
+          />
       </div>
+      <!-- <div> {{ dataEmployee }} </div> -->
     </q-form>
-
   </div>
 </template>
 
@@ -50,11 +56,13 @@
 
 <script>
 import login_api from '../api/login/index';
+// import employee from '../api/Employee/indexs';
 export default {
 data () {
       return {
           username: "",
-          password: ""
+          password: "",
+          // dataEmployee: "MASIH GAKADA"
       }
   },
   methods : {
@@ -72,6 +80,6 @@ data () {
             console.log(err);
             });
       }
+    }
   }
-}
 </script>

@@ -1,14 +1,14 @@
 import { getApiNoAuth } from '../utils'
 
 export default {
-  userlogin (window, username, password, realm, email) {
+  userEmp (window, nama, jenisKelamin, tanggalLahir, nomorTelepon, email) {
     return getApiNoAuth()
-      .get('Users/login', {
-        username: username,
-        password: password,
-        realm: realm,
-        email: email
-
+      .get('employees', {
+        nama:nama,
+        jenisKelamin:jenisKelamin,
+        tanggalLahir:tanggalLahir,
+        nomorTelpon:nomorTelpon,
+        email:email
       })
       .then(function (response) {
         console.log(response)
